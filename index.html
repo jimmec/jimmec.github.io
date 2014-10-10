@@ -14,13 +14,13 @@
         var cvPDF = new PDFObject({
           url: "resume/jimmy-cv-fin-2014.pdf",
           id: "cvPDF",
-          width: "500px",
-          height: "300px",
+          width: "100%",
+          height: "100%",
           pdfOpenParams: {
             navpanes: 1,
             statusbar: 0,
-            view: "FitH",
-            pagemode: "thumbs"
+            view: "Fit",
+            pagemode: "none"
           }
         }).embed("cv-pdf");  
 
@@ -67,7 +67,7 @@ $ vim ....
 <h3>
 <a name="cv" class="anchor" href="#cv"><span class="octicon octicon-link"></span></a>cv</h3>
 
-<div id="cv-pdf">
+<div id="cv-pdf" style="height:845px">
   <!--
     <object data="https://github.com/jimmec/jimmec.github.io/raw/master/resume/jimmy-cv-fin-2014.pdf" type="application/pdf" alt="cv" width="100%"></object>
   -->
